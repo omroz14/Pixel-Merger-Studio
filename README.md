@@ -60,7 +60,7 @@ You need **Python 3.10 or newer** (developed and tested with 3.12).
 1. Install Python from [python.org](https://www.python.org/downloads/). In the installer, tick
    **Add python.exe to PATH**. Tkinter is included.
 2. Download this project: **Code → Download ZIP** on GitHub, then unzip it. If you use Git, run
-   `git clone https://github.com/omroz14/Pixel-Merger.git` instead.
+   `git clone https://github.com/omroz14/pixel-merger.git` instead.
 3. Open PowerShell in the project folder and run:
 
    ```powershell
@@ -79,8 +79,8 @@ Tkinter is a system package, so `pip` cannot install it.
 
 ```bash
 sudo apt install python3-tk python3-venv git
-git clone https://github.com/omroz14/Pixel-Merger.git
-cd Pixel-Merger
+git clone https://github.com/omroz14/pixel-merger.git
+cd pixel-merger
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -92,8 +92,8 @@ python main.py
 Install Python from [python.org](https://www.python.org/downloads/) (it includes Tkinter), then:
 
 ```bash
-git clone https://github.com/omroz14/Pixel-Merger.git
-cd Pixel-Merger
+git clone https://github.com/omroz14/pixel-merger.git
+cd pixel-merger
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -179,8 +179,8 @@ These constants can be changed to taste:
 
 ## More projects
 
-- [Pixel Sort Studio](https://github.com/omroz14/Pixel-sorter): sort the pixels of a photo along any direction.
-- [Vector Field Studio](https://github.com/omroz14/VectorFieldVisualizer): explore 2D vector fields.
+- [Pixel Sort Studio](https://github.com/omroz14/pixel-sort-studio): sort the pixels of a photo along any direction.
+- [Vector Field Studio](https://github.com/omroz14/vector-field-studio): explore 2D vector fields.
 
 ## License
 
