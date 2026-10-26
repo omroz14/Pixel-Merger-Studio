@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Pixel-sort mosaic: rearranges the pixels of a SOURCE image so they resemble
+Pixel Merger: rearranges the pixels of a SOURCE image so they resemble
 a TARGET image, then animates every pixel flying to its new cell.
 
 Requires: Python 3, Pillow, NumPy (Tkinter ships with Python).
@@ -32,7 +32,7 @@ def ease_in_out(t):
 class PixelSortApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Pixel Sort Mosaic")
+        self.title("Pixel Merger")
         self.resizable(False, False)
 
         # Per-side state ("target" / "source"). The crop is stored in ORIGINAL
@@ -61,7 +61,7 @@ class PixelSortApp(tk.Tk):
         # --- Image panels: target on the left, source on the right ---
         panels = tk.Frame(self, padx=10, pady=10)
         panels.pack()
-        titles = {"target": "Target (GO TO)", "source": "Source"}
+        titles = {"target": "Target", "source": "Source"}
         for col, side in enumerate(("target", "source")):
             box = tk.LabelFrame(panels, text=titles[side], padx=8, pady=6)
             box.grid(row=0, column=col, padx=8)
