@@ -41,7 +41,7 @@ class App(ctk.CTk):
     def __init__(self):
         ctk.set_appearance_mode("dark")
         super().__init__(fg_color=BG)
-        self.title("Pixel Merger")
+        self.title("Pixel Merger Studio")
         self.geometry("1400x860")
         self.minsize(1120, 680)
 
@@ -93,7 +93,7 @@ class App(ctk.CTk):
         """The two images and their crops."""
         head = ctk.CTkFrame(left, fg_color="transparent")
         head.pack(fill="x", pady=(4, 14), padx=4)
-        ctk.CTkLabel(head, text="Pixel Merger", font=FONT_TITLE, text_color=TEXT, height=26).pack(anchor="w")
+        ctk.CTkLabel(head, text="Pixel Merger Studio", font=FONT_TITLE, text_color=TEXT, height=26).pack(anchor="w")
         ctk.CTkLabel(head, text="rebuild one image from the pixels of another", font=FONT_SMALL,
                      text_color=MUTED, height=16).pack(anchor="w")
 
@@ -524,7 +524,7 @@ class App(ctk.CTk):
         if not self._ensure_plan():
             return
         path = filedialog.asksaveasfilename(title="Save image", defaultextension=".png",
-                                            initialfile="pixel_merger.png",
+                                            initialfile="pixel_merger_studio.png",
                                             filetypes=[("PNG", "*.png"), ("JPEG", "*.jpg")])
         if not path:
             return
@@ -535,7 +535,7 @@ class App(ctk.CTk):
         if not self._ensure_plan():
             return
         path = filedialog.asksaveasfilename(title="Save animation", defaultextension=".gif",
-                                            initialfile="pixel_merger.gif", filetypes=[("GIF", "*.gif")])
+                                            initialfile="pixel_merger_studio.gif", filetypes=[("GIF", "*.gif")])
         if not path:
             return
         self._stop_timer()

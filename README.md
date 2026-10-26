@@ -1,6 +1,6 @@
 <div align="center">
 
-# Pixel Merger
+# Pixel Merger Studio
 
 **Rebuild one image out of the pixels of another, then watch every pixel fly to its new place.**
 
@@ -9,11 +9,11 @@
 ![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-![Pixel Merger main window](docs/images/screenshot-main.png)
+![Pixel Merger Studio main window](docs/images/screenshot-main.png)
 
 </div>
 
-Pixel Merger takes a **source** image and rearranges its pixels so that, together, they resemble a **target**
+Pixel Merger Studio takes a **source** image and rearranges its pixels so that, together, they resemble a **target**
 image. No pixel is added or removed: every pixel of the source is simply moved, and, if you want, nudged
 towards the target's colour. The app then animates the whole rearrangement in one of six motion styles and
 lets you export the animation as a GIF.
@@ -60,7 +60,7 @@ You need **Python 3.10 or newer** (developed and tested with 3.12).
 1. Install Python from [python.org](https://www.python.org/downloads/). In the installer, tick
    **Add python.exe to PATH**. Tkinter is included.
 2. Download this project: **Code → Download ZIP** on GitHub, then unzip it. If you use Git, run
-   `git clone https://github.com/omroz14/pixel-merger.git` instead.
+   `git clone https://github.com/omroz14/pixel-merger-studio.git` instead.
 3. Open PowerShell in the project folder and run:
 
    ```powershell
@@ -79,8 +79,8 @@ Tkinter is a system package, so `pip` cannot install it.
 
 ```bash
 sudo apt install python3-tk python3-venv git
-git clone https://github.com/omroz14/pixel-merger.git
-cd pixel-merger
+git clone https://github.com/omroz14/pixel-merger-studio.git
+cd pixel-merger-studio
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -92,8 +92,8 @@ python main.py
 Install Python from [python.org](https://www.python.org/downloads/) (it includes Tkinter), then:
 
 ```bash
-git clone https://github.com/omroz14/pixel-merger.git
-cd pixel-merger
+git clone https://github.com/omroz14/pixel-merger-studio.git
+cd pixel-merger-studio
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

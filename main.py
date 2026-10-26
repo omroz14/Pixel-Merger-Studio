@@ -1,4 +1,4 @@
-"""Pixel Merger entry point."""
+"""Pixel Merger Studio entry point."""
 import sys
 
 try:
