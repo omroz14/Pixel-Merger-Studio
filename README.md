@@ -24,9 +24,9 @@ lets you export the animation as a GIF.
 
 ## Demo
 
-| Arc | Swirl | Explode |
+| Arc | Cascade | Explode |
 |:---:|:---:|:---:|
-| ![Arc motion](docs/images/motion-arc.gif) | ![Swirl motion](docs/images/motion-swirl.gif) | ![Explode motion](docs/images/motion-explode.gif) |
+| ![Arc motion](docs/images/zizek_arc.gif) | ![Cascade motion](docs/images/zizek_cascade.gif) | ![Explode motion](docs/images/zizek_explode.gif) |
 
 ## Contents
 
