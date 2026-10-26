@@ -36,15 +36,16 @@ lets you export the animation as a GIF.
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Quick start](#quick-start)
 - [How it works](#how-it-works)
 - [Settings](#settings)
 - [Troubleshooting](#troubleshooting)
+- [More projects](#more-projects)
 - [License](#license)
 
 ## Features
 
-- **Any two images:** PNG, JPEG, BMP, GIF or WebP, at any resolution.
+- **Any two images:** PNG, JPEG, BMP, GIF, WebP or TIFF, at any resolution.
 - **Square crop for each image:** click or drag to move it; the slider or the mouse wheel resizes it.
 - **Colour-aware matching:** pixels are paired by lightness *and* colour, so colours land where they belong.
 - **Target colour blend:** shifts each pixel's hue towards the target when the source lacks its colours.
@@ -52,11 +53,11 @@ lets you export the animation as a GIF.
 - **Grid size of 64, 128, 256, 512 or 1024:** choose between a quick, blocky mosaic and a detailed one.
 - **Playback controls:** play, pause, a timeline to scrub through, arrow keys to step, and 0.5×–4× speed.
 - **Three views:** the animation, the result, and the target and result side by side.
-- **Export** the result as PNG or the animation as a GIF.
+- **Export** the result as PNG or JPEG and the animation as a GIF.
 
 ## Installation
 
-You need **Python 3.10 or newer**.
+You need **Python 3.10 or newer** (developed and tested with 3.12).
 
 ### Windows
 
@@ -103,11 +104,16 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Usage
+### Running it again later
+
+Open a terminal in the project folder, activate the environment (`.venv\Scripts\Activate.ps1` on Windows,
+`source .venv/bin/activate` elsewhere) and run `python main.py`.
+
+## Quick start
 
 1. Under **Target**, click **Open…** (or the empty preview) and pick the picture you want to recreate.
 2. Under **Source**, click **Open…** and pick the picture whose pixels will be used.
-   **⇄ Swap** exchanges the two.
+   **⇄ Swap target and source** exchanges the two.
 3. Adjust each crop: click or drag on the preview to move the square, and use **Crop size** or the mouse
    wheel to resize it. **Reset crop** centres the largest possible square.
 4. In **Matching**, choose **Colour** or **Brightness**, a **Target colour** amount and a **Grid** size.
@@ -158,7 +164,7 @@ These constants can be changed to taste:
 |----------|------|---------|---------|
 | `FRAMES` | `ui.py` | `100` | Number of animation frames |
 | `BASE_FRAME_MS` | `ui.py` | `40` | Delay between frames at 1× speed (40 ms = 25 fps) |
-| `GIF_MAX` | `ui.py` | `512` | Minimum size of exported images and GIFs (the grid is scaled up by a whole number) |
+| `EXPORT_MIN_PX` | `ui.py` | `512` | Minimum size of exported images and GIFs (the grid is scaled up by a whole number) |
 | `CHROMA_WEIGHT` | `merger.py` | `2.0` | How much colour counts against lightness in Colour matching |
 | `ARC_STRENGTH` | `merger.py` | `0.15` | How far the Arc, Cascade and Swarm paths curve |
 | `SWIRL_TURNS` | `merger.py` | `0.75` | Extra rotation in Swirl, in full turns |
@@ -174,6 +180,11 @@ These constants can be changed to taste:
 | `py` or `python` is not recognised (Windows) | Reinstall Python and tick **Add python.exe to PATH**. |
 | Computing takes a long time | The 512 grid moves over 260,000 pixels per frame and 1024 over a million (about 15 s to match, about 0.1 s per frame the first time it plays, and around 300 MB of memory for the frames). Use 128 or 256 for quicker results. |
 | The result looks almost black and white | The source lacks the target's colours. Raise **Target colour**, or pick a more colourful source. |
+
+## More projects
+
+- [Pixel Sort Studio](https://github.com/omroz14/Pixel-sorter): sort the pixels of a photo along any direction.
+- [Vector Field Studio](https://github.com/omroz14/VectorFieldVisualizer): explore 2D vector fields.
 
 ## License
 

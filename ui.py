@@ -14,7 +14,7 @@ PANEL_W = 290      # width of each side panel (px)
 PREVIEW_PX = 236   # side of the image previews in the side panels
 FRAMES = 100       # frames in one animation
 BASE_FRAME_MS = 40 # frame delay at 1x speed (40 ms = 25 fps)
-GIF_MAX = 512      # an exported GIF is the grid scaled up by a whole number, to at least this size
+EXPORT_MIN_PX = 512  # exported images and GIFs are the grid scaled up by a whole number, to at least this size
 GIF_HOLD_MS = 1500 # the last GIF frame stays this long before the loop restarts
 
 ANIMATION, RESULT, COMPARE = "Animation", "Result", "Compare"
@@ -516,7 +516,7 @@ class App(ctk.CTk):
 
     def _upscale(self, frame):
         """Grid image -> PIL, scaled up by a whole number so every pixel stays a crisp square."""
-        k = max(1, -(-GIF_MAX // self.grid_n))
+        k = max(1, -(-EXPORT_MIN_PX // self.grid_n))
         img = Image.fromarray(frame)
         return img.resize((img.width * k, img.height * k), Image.NEAREST)
 
