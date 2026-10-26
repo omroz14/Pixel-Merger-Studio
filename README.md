@@ -24,10 +24,6 @@ lets you export the animation as a GIF.
 
 ## Demo
 
-<!-- Put the GIFs in docs/images/ with these names. -->
-
-![Pixel Merger animation](docs/images/demo.gif)
-
 | Arc | Swirl | Explode |
 |:---:|:---:|:---:|
 | ![Arc motion](docs/images/motion-arc.gif) | ![Swirl motion](docs/images/motion-swirl.gif) | ![Explode motion](docs/images/motion-explode.gif) |
