@@ -22,6 +22,16 @@ lets you export the animation as a GIF.
 |:---:|:---:|:---:|
 | ![Target image](docs/images/example-target.png) | ![Source image](docs/images/example-source.png) | ![Result](docs/images/example-result.png) |
 
+## Demo
+
+<!-- Put the GIFs in docs/images/ with these names. -->
+
+![Pixel Merger animation](docs/images/demo.gif)
+
+| Arc | Swirl | Explode |
+|:---:|:---:|:---:|
+| ![Arc motion](docs/images/motion-arc.gif) | ![Swirl motion](docs/images/motion-swirl.gif) | ![Explode motion](docs/images/motion-explode.gif) |
+
 ## Contents
 
 - [Features](#features)
